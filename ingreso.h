@@ -54,6 +54,7 @@ namespace gestiondatos {
 
 
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
 
 	private:
 		/// <summary>
@@ -79,6 +80,7 @@ namespace gestiondatos {
 			this->txtcorreo = (gcnew System::Windows::Forms::TextBox());
 			this->txtcontraseña = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -97,7 +99,7 @@ namespace gestiondatos {
 			// 
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Location = System::Drawing::Point(237, 95);
+			this->label2->Location = System::Drawing::Point(247, 95);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(28, 13);
 			this->label2->TabIndex = 1;
@@ -115,7 +117,7 @@ namespace gestiondatos {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
-			this->label3->Location = System::Drawing::Point(237, 180);
+			this->label3->Location = System::Drawing::Point(247, 180);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(41, 13);
 			this->label3->TabIndex = 3;
@@ -125,7 +127,7 @@ namespace gestiondatos {
 			// 
 			this->label4->AutoSize = true;
 			this->label4->BackColor = System::Drawing::Color::Transparent;
-			this->label4->Location = System::Drawing::Point(237, 137);
+			this->label4->Location = System::Drawing::Point(247, 137);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(47, 13);
 			this->label4->TabIndex = 4;
@@ -135,7 +137,7 @@ namespace gestiondatos {
 			// 
 			this->label5->AutoSize = true;
 			this->label5->BackColor = System::Drawing::Color::Transparent;
-			this->label5->Location = System::Drawing::Point(237, 216);
+			this->label5->Location = System::Drawing::Point(247, 216);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(64, 13);
 			this->label5->TabIndex = 5;
@@ -172,12 +174,23 @@ namespace gestiondatos {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &ingreso::button1_Click);
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(344, 343);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(106, 40);
+			this->button2->TabIndex = 10;
+			this->button2->Text = L"Salir";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &ingreso::button2_Click);
+			// 
 			// ingreso
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(787, 456);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->txtcontraseña);
 			this->Controls->Add(this->txtcorreo);
@@ -209,5 +222,8 @@ namespace gestiondatos {
 		MessageBox::Show("Registro guardado exitosamente");
 
 	}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	Close();
+}
 };
 }

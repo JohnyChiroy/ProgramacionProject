@@ -27,12 +27,28 @@ protected:
 
 
 public:
-    void Insertar(int dpi, String^ nombre, String^ correo, String^ contraseña) {
+    void Insertar(int long long dpi, String^ nombre, String^ correo, String^ contraseña) {
         Conectar();
         String^ sentencia = "Insert into USUARIO values(@dpi, @nombre, @correo, @contraseña)";
         SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
         ejecutar->Parameters->AddWithValue("@dpi", dpi);
         ejecutar->Parameters->AddWithValue("@nombre", nombre);
+        ejecutar->Parameters->AddWithValue("@correo", correo);
+        ejecutar->Parameters->AddWithValue("@contraseña", contraseña);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertar2(int long long dpi, String^ nombre1, String^ nombre2, String^ apellido1, String^ apellido2, int edad, String^ correo, String^ contraseña) {
+        Conectar();
+        String^ sentencia = "Insert into CREAR values(@dpi, @nombre1, @nombre2, @apellido1, @apellido2, @edad, @correo, @contraseña)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@dpi", dpi);
+        ejecutar->Parameters->AddWithValue("@nombre1", nombre1);
+        ejecutar->Parameters->AddWithValue("@nombre2", nombre2);
+        ejecutar->Parameters->AddWithValue("@apellido1", apellido1);
+        ejecutar->Parameters->AddWithValue("@apellido2", apellido2);
+        ejecutar->Parameters->AddWithValue("@edad", edad);
         ejecutar->Parameters->AddWithValue("@correo", correo);
         ejecutar->Parameters->AddWithValue("@contraseña", contraseña);
         cn->Open();

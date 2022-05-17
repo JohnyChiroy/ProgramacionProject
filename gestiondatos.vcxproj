@@ -120,17 +120,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="crear.cpp" />
     <ClCompile Include="ingreso.cpp" />
+    <ClCompile Include="inicio.cpp" />
+    <ClCompile Include="sesion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="conexion.h" />
+    <ClInclude Include="crear.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="ingreso.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="inicio.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="sesion.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="crear.resx">
+      <DependentUpon>crear.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ingreso.resx">
       <DependentUpon>ingreso.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sesion.resx">
+      <DependentUpon>sesion.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

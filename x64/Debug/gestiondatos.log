@@ -1,4 +1,5 @@
-﻿  ingreso.cpp
-C:\Cod_C++\gestiondatos\ingreso.h(202,36): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-  ingreso.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+﻿  inicio.cpp
+  sesion.cpp
+  Generando código...
+  crear.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   gestiondatos.vcxproj -> C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.exe
