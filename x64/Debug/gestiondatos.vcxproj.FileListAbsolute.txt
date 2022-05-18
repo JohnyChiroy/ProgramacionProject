@@ -8,3 +8,8 @@ C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.inicio.resources
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.sesion.resources
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.inventario.resources
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.consulta.resources
+C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.accesorios.resources
+C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.cocina.resources
+C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.electronicos.resources
+C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.herramientas.resources
+C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.hogar.resources

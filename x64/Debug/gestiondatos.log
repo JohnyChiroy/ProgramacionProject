@@ -1,5 +1,4 @@
 ﻿  consulta.cpp
-  crear.cpp
   inicio.cpp
 C:\Cod_C++\gestiondatos\inventario.h(441,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
 C:\Cod_C++\gestiondatos\inventario.h(440,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
@@ -64,5 +63,5 @@ C:\Cod_C++\gestiondatos\inventario.h(524,19): warning C4244: 'argumento': conver
 C:\Cod_C++\gestiondatos\inventario.h(520,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
 C:\Cod_C++\gestiondatos\inventario.h(519,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
   Generando código...
-  consulta.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  accesorios.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   gestiondatos.vcxproj -> C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.exe
