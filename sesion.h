@@ -1,4 +1,7 @@
 #pragma once
+#include "conexion.h"
+#include "sesion.h"
+#include "inventario.h"
 
 namespace gestiondatos {
 
@@ -49,7 +52,7 @@ namespace gestiondatos {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
-	private: System::Windows::Forms::Button^ button2;
+
 
 	private:
 		/// <summary>
@@ -73,7 +76,6 @@ namespace gestiondatos {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
-			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
@@ -103,6 +105,7 @@ namespace gestiondatos {
 			// 
 			this->txtcontraseñalog->Location = System::Drawing::Point(85, 288);
 			this->txtcontraseñalog->Name = L"txtcontraseñalog";
+			this->txtcontraseñalog->PasswordChar = '*';
 			this->txtcontraseñalog->Size = System::Drawing::Size(178, 20);
 			this->txtcontraseñalog->TabIndex = 2;
 			this->txtcontraseñalog->TextChanged += gcnew System::EventHandler(this, &sesion::textBox2_TextChanged);
@@ -141,7 +144,7 @@ namespace gestiondatos {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(118, 347);
+			this->button1->Location = System::Drawing::Point(120, 349);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(102, 35);
 			this->button1->TabIndex = 5;
@@ -175,20 +178,6 @@ namespace gestiondatos {
 			this->pictureBox3->TabIndex = 7;
 			this->pictureBox3->TabStop = false;
 			// 
-			// button2
-			// 
-			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button2->ForeColor = System::Drawing::Color::White;
-			this->button2->Location = System::Drawing::Point(118, 401);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(102, 35);
-			this->button2->TabIndex = 8;
-			this->button2->Text = L"Salir";
-			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &sesion::button2_Click);
-			// 
 			// sesion
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -196,7 +185,6 @@ namespace gestiondatos {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->ClientSize = System::Drawing::Size(341, 474);
-			this->Controls->Add(this->button2);
 			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button1);
@@ -227,49 +215,47 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	Close();
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	/*bool result1;
+	bool result1;
 	bool result2 = false;
 	SqlConnection^ cn;
 	SqlConnectionStringBuilder^ st;
 	String^ correo; String^ contra;
 	st = gcnew SqlConnectionStringBuilder();
-	st->DataSource = "MÍNCHEZ-JOSHUA\\SQLEXPRESS";
-	st->InitialCatalog = "FeLogin";//su base de datos se llama Biosisemas
+	st->DataSource = "localhost\\SQLEXPRESS";
+	st->InitialCatalog = "gestiondatos";
 	st->IntegratedSecurity = true;
 	cn = gcnew SqlConnection(Convert::ToString(st));
 	ListView^ Bio = gcnew ListView();
-	String^ sentencia = "SELECT * FROM USUARIO_ACCESO";
+	String^ sentencia = "SELECT * FROM CREAR";
 	SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
 	cn->Open();
 	SqlDataReader^ reader = ejecutar->ExecuteReader();
 	while (reader->Read())
 	{
-		correo = (reader["correo_electronico"]->ToString());
+		correo = (reader["correo"]->ToString());
 		contra = (reader["contraseña"]->ToString());
 
-		//MessageBox::Show(correo);
-		//MessageBox::Show(contra);
-
-		if (txtUsuario->Text == correo && txtContra->Text == contra) {
-			FeLogin::firmaElectronica^ form = gcnew FeLogin::firmaElectronica();
+		if (txtcorreolog->Text == correo && txtcontraseñalog->Text == contra) {
+			gestiondatos::inventario^ form = gcnew gestiondatos::inventario();
 			form->Show();
 			result2 = true;
 		}
 		else {
 			result1 = false;
 
-			//MessageBox::Show("EL USUARIO NO EXISTE");
 		}
 	}
 
 	if (result1 == false && result2 == false) {
-		MessageBox::Show("EL USUARIO NO EXISTE");
+		MessageBox::Show("Usuario o Contraseña Incorrecto", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
 	}
 
 	cn->Close();
 
-	txtUsuario->Text = "";
-	txtContra->Text = "";*/
+	txtcorreolog->Text = "";
+	txtcontraseñalog->Text = "";
+
+	Close();
 }
 };
 }

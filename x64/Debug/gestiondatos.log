@@ -1,5 +1,68 @@
-﻿  inicio.cpp
+﻿  consulta.cpp
+  crear.cpp
+  inicio.cpp
+C:\Cod_C++\gestiondatos\inventario.h(441,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(440,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(436,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(435,38): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(462,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(461,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(457,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(456,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(483,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(482,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(478,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(477,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(504,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(503,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(499,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(498,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(525,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(524,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(520,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(519,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+  inventario.cpp
+C:\Cod_C++\gestiondatos\inventario.h(441,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(440,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(436,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(435,38): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(462,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(461,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(457,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(456,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(483,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(482,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(478,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(477,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(504,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(503,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(499,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(498,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(525,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(524,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(520,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(519,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
   sesion.cpp
+C:\Cod_C++\gestiondatos\inventario.h(441,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(440,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(436,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(435,38): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(462,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(461,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(457,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(456,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(483,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(482,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(478,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(477,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(504,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(503,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(499,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(498,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(525,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(524,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(520,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\inventario.h(519,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
   Generando código...
-  crear.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  consulta.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   gestiondatos.vcxproj -> C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.exe

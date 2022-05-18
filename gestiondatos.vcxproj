@@ -120,12 +120,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="accesorios.cpp" />
+    <ClCompile Include="cocina.cpp" />
+    <ClCompile Include="consulta.cpp" />
     <ClCompile Include="crear.cpp" />
+    <ClCompile Include="electronicos.cpp" />
+    <ClCompile Include="herramientas.cpp" />
+    <ClCompile Include="hogar.cpp" />
     <ClCompile Include="ingreso.cpp" />
     <ClCompile Include="inicio.cpp" />
+    <ClCompile Include="inventario.cpp" />
     <ClCompile Include="sesion.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="accesorios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="cocina.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="consulta.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="electronicos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="herramientas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="hogar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="inventario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="conexion.h" />
     <ClInclude Include="crear.h">
       <FileType>CppForm</FileType>
@@ -141,6 +169,27 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="accesorios.resx">
+      <DependentUpon>accesorios.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cocina.resx">
+      <DependentUpon>cocina.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consulta.resx">
+      <DependentUpon>consulta.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="electronicos.resx">
+      <DependentUpon>electronicos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="herramientas.resx">
+      <DependentUpon>herramientas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hogar.resx">
+      <DependentUpon>hogar.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventario.resx">
+      <DependentUpon>inventario.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="crear.resx">
       <DependentUpon>crear.h</DependentUpon>
     </EmbeddedResource>
