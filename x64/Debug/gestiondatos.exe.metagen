@@ -6,7 +6,6 @@
   gestiondatos.hogar.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.inventario.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.crear.resources - Embedded, ContainedInManifestFile, 
-  gestiondatos.ingreso.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.inicio.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.sesion.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
@@ -43,9 +42,6 @@ Class gestiondatos.consulta: AutoLayout, AnsiClass, Class, Public, BeforeFieldIn
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.crear: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class gestiondatos.ingreso: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.inventario: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

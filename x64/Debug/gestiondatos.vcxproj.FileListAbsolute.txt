@@ -1,6 +1,5 @@
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.vcxproj.AssemblyReference.cache
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.vcxproj.SuggestedBindingRedirects.cache
-C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.ingreso.resources
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.vcxproj.GenerateResource.cache
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.exe
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.crear.resources

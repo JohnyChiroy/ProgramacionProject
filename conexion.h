@@ -132,27 +132,5 @@ public:
         ejecutar->ExecuteNonQuery();
         cn->Close();
     }
-    /*void Insertar2(int id_producto, String^ desc, float precio) {
-        Conectar();
-        String^ sentencia = "Insert into PRODUCTO values(@id_producto, @desc, @precio)";
-        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
-        ejecutar->Parameters->AddWithValue("@id_producto", id_producto);
-        ejecutar->Parameters->AddWithValue("@desc", desc);
-        ejecutar->Parameters->AddWithValue("@precio", precio);
-        cn->Open();
-        ejecutar->ExecuteNonQuery();
-        cn->Close();
-    }
-    void Insertar3(int id_venta, int cantidad, int id_cliente, int id_producto) {
-        Conectar();
-        String^ sentencia = "Insert into VENTA values(@id_venta, @cantidad, @id_cliente, @id_producto)";
-        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
-        ejecutar->Parameters->AddWithValue("@id_venta", id_venta);
-        ejecutar->Parameters->AddWithValue("@cantidad", cantidad);
-        ejecutar->Parameters->AddWithValue("@id_cliente", id_cliente);
-        ejecutar->Parameters->AddWithValue("@id_producto", id_producto);
-        cn->Open();
-        ejecutar->ExecuteNonQuery();
-        cn->Close();
-    }*/
+
 };

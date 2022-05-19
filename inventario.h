@@ -2,7 +2,7 @@
 #include "conexion.h"
 #include "inventario.h"
 #include "consulta.h"
-
+#include "accesorios.h"
 namespace gestiondatos {
 
 	using namespace System;
@@ -271,11 +271,11 @@ namespace gestiondatos {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(68, 183);
+			this->button1->Location = System::Drawing::Point(55, 183);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(110, 35);
+			this->button1->Size = System::Drawing::Size(134, 35);
 			this->button1->TabIndex = 15;
-			this->button1->Text = L"Electrónicos";
+			this->button1->Text = L"01-Electrónicos";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &inventario::button1_Click);
 			// 
@@ -285,11 +285,11 @@ namespace gestiondatos {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::Color::White;
-			this->button2->Location = System::Drawing::Point(68, 230);
+			this->button2->Location = System::Drawing::Point(55, 230);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(110, 35);
+			this->button2->Size = System::Drawing::Size(134, 35);
 			this->button2->TabIndex = 16;
-			this->button2->Text = L"Hogar";
+			this->button2->Text = L"02-Hogar";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &inventario::button2_Click);
 			// 
@@ -299,11 +299,11 @@ namespace gestiondatos {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button3->ForeColor = System::Drawing::Color::White;
-			this->button3->Location = System::Drawing::Point(68, 280);
+			this->button3->Location = System::Drawing::Point(55, 280);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(110, 35);
+			this->button3->Size = System::Drawing::Size(134, 35);
 			this->button3->TabIndex = 17;
-			this->button3->Text = L"Cocina";
+			this->button3->Text = L"03-Cocina";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &inventario::button3_Click);
 			// 
@@ -313,11 +313,11 @@ namespace gestiondatos {
 			this->button4->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button4->ForeColor = System::Drawing::Color::White;
-			this->button4->Location = System::Drawing::Point(68, 329);
+			this->button4->Location = System::Drawing::Point(55, 329);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(110, 35);
+			this->button4->Size = System::Drawing::Size(134, 35);
 			this->button4->TabIndex = 18;
-			this->button4->Text = L"Accesorios";
+			this->button4->Text = L"04-Accesorios";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &inventario::button4_Click);
 			// 
@@ -327,11 +327,11 @@ namespace gestiondatos {
 			this->button5->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button5->ForeColor = System::Drawing::Color::White;
-			this->button5->Location = System::Drawing::Point(68, 383);
+			this->button5->Location = System::Drawing::Point(55, 383);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(110, 35);
+			this->button5->Size = System::Drawing::Size(134, 35);
 			this->button5->TabIndex = 19;
-			this->button5->Text = L"Herramientas";
+			this->button5->Text = L"05-Herramientas";
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &inventario::button5_Click);
 			// 

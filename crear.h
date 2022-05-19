@@ -297,7 +297,7 @@ namespace gestiondatos {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->button1->Location = System::Drawing::Point(250, 427);
+			this->button1->Location = System::Drawing::Point(342, 433);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(124, 43);
 			this->button1->TabIndex = 17;

@@ -52,6 +52,7 @@ namespace gestiondatos {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::Label^ label3;
 
 
 	private:
@@ -76,6 +77,7 @@ namespace gestiondatos {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
@@ -87,7 +89,7 @@ namespace gestiondatos {
 			this->pictureBox1->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.ErrorImage")));
 			this->pictureBox1->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\usuario.png";
 			this->pictureBox1->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.InitialImage")));
-			this->pictureBox1->Location = System::Drawing::Point(108, 54);
+			this->pictureBox1->Location = System::Drawing::Point(98, 81);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(146, 105);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -96,14 +98,14 @@ namespace gestiondatos {
 			// 
 			// txtcorreolog
 			// 
-			this->txtcorreolog->Location = System::Drawing::Point(85, 216);
+			this->txtcorreolog->Location = System::Drawing::Point(98, 237);
 			this->txtcorreolog->Name = L"txtcorreolog";
 			this->txtcorreolog->Size = System::Drawing::Size(178, 20);
 			this->txtcorreolog->TabIndex = 1;
 			// 
 			// txtcontraseñalog
 			// 
-			this->txtcontraseñalog->Location = System::Drawing::Point(85, 288);
+			this->txtcontraseñalog->Location = System::Drawing::Point(98, 309);
 			this->txtcontraseñalog->Name = L"txtcontraseñalog";
 			this->txtcontraseñalog->PasswordChar = '*';
 			this->txtcontraseñalog->Size = System::Drawing::Size(178, 20);
@@ -117,7 +119,7 @@ namespace gestiondatos {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(82, 195);
+			this->label1->Location = System::Drawing::Point(95, 216);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(64, 18);
 			this->label1->TabIndex = 3;
@@ -131,7 +133,7 @@ namespace gestiondatos {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(82, 267);
+			this->label2->Location = System::Drawing::Point(95, 288);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(102, 18);
 			this->label2->TabIndex = 4;
@@ -144,7 +146,7 @@ namespace gestiondatos {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(120, 349);
+			this->button1->Location = System::Drawing::Point(133, 370);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(102, 35);
 			this->button1->TabIndex = 5;
@@ -158,7 +160,7 @@ namespace gestiondatos {
 			this->pictureBox2->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.ErrorImage")));
 			this->pictureBox2->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\user.png";
 			this->pictureBox2->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.InitialImage")));
-			this->pictureBox2->Location = System::Drawing::Point(34, 197);
+			this->pictureBox2->Location = System::Drawing::Point(47, 218);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(45, 39);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -171,12 +173,25 @@ namespace gestiondatos {
 			this->pictureBox3->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.ErrorImage")));
 			this->pictureBox3->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\candado.png";
 			this->pictureBox3->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.InitialImage")));
-			this->pictureBox3->Location = System::Drawing::Point(34, 269);
+			this->pictureBox3->Location = System::Drawing::Point(47, 290);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(45, 39);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox3->TabIndex = 7;
 			this->pictureBox3->TabStop = false;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->BackColor = System::Drawing::Color::Transparent;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->ForeColor = System::Drawing::Color::White;
+			this->label3->Location = System::Drawing::Point(93, 33);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(171, 28);
+			this->label3->TabIndex = 8;
+			this->label3->Text = L"Iniciar Sesion";
 			// 
 			// sesion
 			// 
@@ -184,7 +199,8 @@ namespace gestiondatos {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
-			this->ClientSize = System::Drawing::Size(341, 474);
+			this->ClientSize = System::Drawing::Size(341, 506);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button1);

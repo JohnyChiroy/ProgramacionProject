@@ -1,47 +1,35 @@
-﻿  consulta.cpp
+﻿  crear.cpp
   inicio.cpp
-C:\Cod_C++\gestiondatos\inventario.h(441,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(440,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(436,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(435,38): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(462,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(461,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(457,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(456,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(483,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(482,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(478,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(477,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(504,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(503,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(499,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(498,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(525,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(524,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(520,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(519,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-  inventario.cpp
-C:\Cod_C++\gestiondatos\inventario.h(441,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(440,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(436,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(435,38): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(462,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(461,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(457,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(456,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(483,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(482,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(478,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(477,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(504,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(503,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(499,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(498,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(525,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(524,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(520,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-C:\Cod_C++\gestiondatos\inventario.h(519,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
-  sesion.cpp
+C:\Cod_C++\gestiondatos\electronicos.h(416,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(416,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(416,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(416,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(416,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(416,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(415,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(415,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(415,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(415,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(415,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(415,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(416,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(416,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(416,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(416,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(416,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(416,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(429,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(429,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(429,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(429,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(429,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(429,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(414,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(414,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(414,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(414,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(414,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(414,85): warning C4101: 'precven': variable local sin referencia
 C:\Cod_C++\gestiondatos\inventario.h(441,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
 C:\Cod_C++\gestiondatos\inventario.h(440,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
 C:\Cod_C++\gestiondatos\inventario.h(436,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos

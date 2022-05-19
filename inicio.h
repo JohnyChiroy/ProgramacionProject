@@ -43,14 +43,14 @@ namespace gestiondatos {
 
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
-	private: System::Windows::Forms::ListView^ listView1;
-	private: System::Windows::Forms::ColumnHeader^ columnHeader1;
-	private: System::Windows::Forms::ColumnHeader^ columnHeader2;
-	private: System::Windows::Forms::ColumnHeader^ columnHeader3;
-	private: System::Windows::Forms::ColumnHeader^ columnHeader4;
-	private: System::Windows::Forms::ColumnHeader^ columnHeader5;
-	private: System::Windows::Forms::ColumnHeader^ columnHeader6;
-	private: System::Windows::Forms::ColumnHeader^ columnHeader7;
+
+
+
+
+
+
+
+
 
 	private:
 		/// <summary>
@@ -72,14 +72,6 @@ namespace gestiondatos {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->listView1 = (gcnew System::Windows::Forms::ListView());
-			this->columnHeader1 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->columnHeader2 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->columnHeader3 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->columnHeader4 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->columnHeader5 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->columnHeader6 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->columnHeader7 = (gcnew System::Windows::Forms::ColumnHeader());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -104,7 +96,7 @@ namespace gestiondatos {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::White;
-			this->label3->Location = System::Drawing::Point(12, 208);
+			this->label3->Location = System::Drawing::Point(28, 207);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(300, 46);
 			this->label3->TabIndex = 4;
@@ -118,7 +110,7 @@ namespace gestiondatos {
 			this->pictureBox1->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.ErrorImage")));
 			this->pictureBox1->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\fondos\\pc.png";
 			this->pictureBox1->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.InitialImage")));
-			this->pictureBox1->Location = System::Drawing::Point(319, 58);
+			this->pictureBox1->Location = System::Drawing::Point(323, 58);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(463, 302);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -168,68 +160,12 @@ namespace gestiondatos {
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &inicio::pictureBox2_Click);
 			// 
-			// listView1
-			// 
-			this->listView1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"listView1.BackgroundImage")));
-			this->listView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::ColumnHeader^  >(7) {
-				this->columnHeader1, this->columnHeader2,
-					this->columnHeader3, this->columnHeader4, this->columnHeader5, this->columnHeader6, this->columnHeader7
-			});
-			this->listView1->HideSelection = false;
-			this->listView1->Location = System::Drawing::Point(72, 292);
-			this->listView1->Name = L"listView1";
-			this->listView1->Size = System::Drawing::Size(155, 79);
-			this->listView1->TabIndex = 23;
-			this->listView1->UseCompatibleStateImageBehavior = false;
-			this->listView1->View = System::Windows::Forms::View::Details;
-			// 
-			// columnHeader1
-			// 
-			this->columnHeader1->Text = L"CódigoProducto";
-			this->columnHeader1->Width = 88;
-			// 
-			// columnHeader2
-			// 
-			this->columnHeader2->Text = L"Cantidad";
-			this->columnHeader2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			// 
-			// columnHeader3
-			// 
-			this->columnHeader3->Text = L"Descripción";
-			this->columnHeader3->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->columnHeader3->Width = 131;
-			// 
-			// columnHeader4
-			// 
-			this->columnHeader4->Text = L"Marca";
-			this->columnHeader4->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->columnHeader4->Width = 52;
-			// 
-			// columnHeader5
-			// 
-			this->columnHeader5->Text = L"Modelo";
-			this->columnHeader5->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->columnHeader5->Width = 67;
-			// 
-			// columnHeader6
-			// 
-			this->columnHeader6->Text = L"PrecioCosto";
-			this->columnHeader6->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->columnHeader6->Width = 72;
-			// 
-			// columnHeader7
-			// 
-			this->columnHeader7->Text = L"PrecioVenta";
-			this->columnHeader7->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->columnHeader7->Width = 80;
-			// 
 			// inicio
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(797, 506);
-			this->Controls->Add(this->listView1);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button1);
