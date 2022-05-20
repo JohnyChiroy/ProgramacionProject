@@ -70,6 +70,7 @@ namespace gestiondatos {
 	private: System::Windows::Forms::ColumnHeader^ columnHeader5;
 	private: System::Windows::Forms::ColumnHeader^ columnHeader6;
 	private: System::Windows::Forms::ColumnHeader^ columnHeader7;
+	private: System::Windows::Forms::Button^ button1;
 
 	private:
 		/// <summary>
@@ -111,6 +112,7 @@ namespace gestiondatos {
 			this->columnHeader5 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->columnHeader6 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->columnHeader7 = (gcnew System::Windows::Forms::ColumnHeader());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -364,12 +366,27 @@ namespace gestiondatos {
 			this->columnHeader7->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			this->columnHeader7->Width = 80;
 			// 
+			// button1
+			// 
+			this->button1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.BackgroundImage")));
+			this->button1->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->ForeColor = System::Drawing::Color::White;
+			this->button1->Location = System::Drawing::Point(714, 435);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(302, 35);
+			this->button1->TabIndex = 77;
+			this->button1->Text = L"Limpiar ";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &hogar::button1_Click);
+			// 
 			// hogar
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::DeepSkyBlue;
 			this->ClientSize = System::Drawing::Size(1238, 506);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->listAccesorios);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label8);
@@ -486,6 +503,16 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 		this->listAccesorios->Items->Add(listView1);
 	}
 	cn->Close();
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	ListViewItem^ listView1 = gcnew Windows::Forms::ListViewItem();
+	listView1->SubItems->Clear();
+	listView1->SubItems->Clear();
+	listView1->SubItems->Clear();
+	listView1->SubItems->Clear();
+	listView1->SubItems->Clear();
+	listView1->SubItems->Clear();
+	this->listAccesorios->Items->Clear();
 }
 };
 }
