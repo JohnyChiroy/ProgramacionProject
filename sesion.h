@@ -2,6 +2,7 @@
 #include "conexion.h"
 #include "sesion.h"
 #include "inventario.h"
+#include "consulta.h"
 
 namespace gestiondatos {
 
@@ -242,7 +243,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	st->IntegratedSecurity = true;
 	cn = gcnew SqlConnection(Convert::ToString(st));
 	ListView^ Bio = gcnew ListView();
-	String^ sentencia = "SELECT * FROM CREAR";
+	String^ sentencia = "SELECT * FROM SESION";
 	SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
 	cn->Open();
 	SqlDataReader^ reader = ejecutar->ExecuteReader();
@@ -252,7 +253,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		contra = (reader["contraseña"]->ToString());
 
 		if (txtcorreolog->Text == correo && txtcontraseñalog->Text == contra) {
-			gestiondatos::inventario^ form = gcnew gestiondatos::inventario();
+			gestiondatos::consulta^ form = gcnew gestiondatos::consulta();
 			form->Show();
 			result2 = true;
 		}

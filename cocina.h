@@ -72,6 +72,7 @@ namespace gestiondatos {
 	private: System::Windows::Forms::ColumnHeader^ columnHeader7;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button3;
 
 	private:
 		/// <summary>
@@ -114,6 +115,7 @@ namespace gestiondatos {
 			this->columnHeader6 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->columnHeader7 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -136,7 +138,7 @@ namespace gestiondatos {
 			this->button5->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button5->ForeColor = System::Drawing::Color::White;
-			this->button5->Location = System::Drawing::Point(365, 394);
+			this->button5->Location = System::Drawing::Point(323, 394);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(110, 35);
 			this->button5->TabIndex = 70;
@@ -381,12 +383,27 @@ namespace gestiondatos {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &cocina::button1_Click);
 			// 
+			// button3
+			// 
+			this->button3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.BackgroundImage")));
+			this->button3->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->ForeColor = System::Drawing::Color::White;
+			this->button3->Location = System::Drawing::Point(60, 394);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(110, 35);
+			this->button3->TabIndex = 78;
+			this->button3->Text = L"Ingresar";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &cocina::button3_Click);
+			// 
 			// cocina
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::DeepSkyBlue;
 			this->ClientSize = System::Drawing::Size(1238, 506);
+			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->listAccesorios);
 			this->Controls->Add(this->pictureBox1);
@@ -513,6 +530,27 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	listView1->SubItems->Clear();
 	listView1->SubItems->Clear();
 	this->listAccesorios->Items->Clear();
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	Conexion cldatos;
+	cldatos.Insertar03(Convert::ToInt64(txtcodproducto->Text),
+		Convert::ToInt64(txtcantidad->Text),
+		txtdescripcion->Text,
+		txtmarca->Text,
+		txtmodelo->Text,
+		Convert::ToInt64(txtprecos->Text),
+		Convert::ToInt64(txtprecven->Text));
+
+	MessageBox::Show("Registro guardado exitosamente");
+
+	//Limpiar textbox
+	txtcodproducto->Text = "";
+	txtcantidad->Text = "";
+	txtdescripcion->Text = "";
+	txtmarca->Text = "";
+	txtmodelo->Text = "";
+	txtprecos->Text = "";
+	txtprecven->Text = "";
 }
 };
 }

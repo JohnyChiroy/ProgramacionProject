@@ -111,11 +111,11 @@ namespace gestiondatos {
 			this->label10->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label10->ForeColor = System::Drawing::Color::White;
-			this->label10->Location = System::Drawing::Point(217, 36);
+			this->label10->Location = System::Drawing::Point(124, 22);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(389, 32);
+			this->label10->Size = System::Drawing::Size(575, 32);
 			this->label10->TabIndex = 23;
-			this->label10->Text = L"Consultar o Actualizar Datos";
+			this->label10->Text = L"Ingreso, Consulta o Actualización de Datos";
 			// 
 			// pictureBox1
 			// 
