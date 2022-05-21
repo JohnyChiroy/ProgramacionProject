@@ -1,4 +1,5 @@
   gestiondatos.accesorios.resources - Embedded, ContainedInManifestFile, 
+  gestiondatos.cliente.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.cocina.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.consulta.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.electronicos.resources - Embedded, ContainedInManifestFile, 
@@ -8,6 +9,7 @@
   gestiondatos.crear.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.inicio.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.sesion.resources - Embedded, ContainedInManifestFile, 
+  gestiondatos.ventas.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly gestiondatos, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey
@@ -26,6 +28,9 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class gestiondatos.accesorios: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class gestiondatos.cliente: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.cocina: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -36,6 +41,9 @@ Class gestiondatos.hogar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.herramientas: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class gestiondatos.ventas: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.consulta: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

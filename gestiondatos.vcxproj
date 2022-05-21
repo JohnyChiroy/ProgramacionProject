@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="accesorios.cpp" />
+    <ClCompile Include="cliente.cpp" />
     <ClCompile Include="cocina.cpp" />
     <ClCompile Include="consulta.cpp" />
     <ClCompile Include="crear.cpp" />
@@ -130,9 +131,13 @@
     <ClCompile Include="inicio.cpp" />
     <ClCompile Include="inventario.cpp" />
     <ClCompile Include="sesion.cpp" />
+    <ClCompile Include="ventas.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="accesorios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="cliente.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="cocina.h">
@@ -163,10 +168,16 @@
     <ClInclude Include="sesion.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ventas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="accesorios.resx">
       <DependentUpon>accesorios.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente.resx">
+      <DependentUpon>cliente.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cocina.resx">
       <DependentUpon>cocina.h</DependentUpon>
@@ -194,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sesion.resx">
       <DependentUpon>sesion.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas.resx">
+      <DependentUpon>ventas.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

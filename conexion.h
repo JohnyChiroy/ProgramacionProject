@@ -132,5 +132,38 @@ public:
         ejecutar->ExecuteNonQuery();
         cn->Close();
     }
+    void Insertarcliente(int long long dpi, String^ nombres, String^ apellidos, String^ direccion, int telefono, int NIT) {
+        Conectar();
+        String^ sentencia = "Insert into CLIENTE values(@dpi, @nombres, @apellidos, @direccion, @telefono, @NIT)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@dpi", dpi);
+        ejecutar->Parameters->AddWithValue("@nombres", nombres);
+        ejecutar->Parameters->AddWithValue("@apellidos", apellidos);
+        ejecutar->Parameters->AddWithValue("@direccion", direccion);
+        ejecutar->Parameters->AddWithValue("@telefono", telefono);
+        ejecutar->Parameters->AddWithValue("@NIT", NIT);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarventas(int id_venta, String^ categoria, int cod_producto01, int cod_producto02, int cod_producto03, int cod_producto04, int cod_producto05, int cantidadven, String^ descripcion, int long long dpi, int totalven) {
+        Conectar();
+        String^ sentencia = "Insert into VENTAS values(@id_venta, @categoria, @cod_producto01, @cod_producto02, @cod_producto03, @cod_producto04, @cod_producto05, @cantidadven, @descripcion, @dpi, @totalven)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_venta", id_venta);
+        ejecutar->Parameters->AddWithValue("@categoria", categoria);
+        ejecutar->Parameters->AddWithValue("@cod_producto01", cod_producto01);
+        ejecutar->Parameters->AddWithValue("@cod_producto02", cod_producto02);
+        ejecutar->Parameters->AddWithValue("@cod_producto03", cod_producto03);
+        ejecutar->Parameters->AddWithValue("@cod_producto04", cod_producto04);
+        ejecutar->Parameters->AddWithValue("@cod_producto05", cod_producto05);
+        ejecutar->Parameters->AddWithValue("@cantidadven", cantidadven);
+        ejecutar->Parameters->AddWithValue("@descripcion", descripcion);
+        ejecutar->Parameters->AddWithValue("@dpi", dpi);
+        ejecutar->Parameters->AddWithValue("@totalven", totalven);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
 
 };

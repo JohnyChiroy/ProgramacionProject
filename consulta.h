@@ -4,6 +4,8 @@
 #include "cocina.h"
 #include "accesorios.h"
 #include "herramientas.h"
+#include "ventas.h"
+#include "cliente.h"
 
 namespace gestiondatos {
 
@@ -75,6 +77,8 @@ namespace gestiondatos {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Button^ button7;
 
 
 	private:
@@ -100,6 +104,8 @@ namespace gestiondatos {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -138,7 +144,7 @@ namespace gestiondatos {
 			this->button5->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button5->ForeColor = System::Drawing::Color::White;
-			this->button5->Location = System::Drawing::Point(130, 377);
+			this->button5->Location = System::Drawing::Point(130, 356);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(110, 35);
 			this->button5->TabIndex = 46;
@@ -152,7 +158,7 @@ namespace gestiondatos {
 			this->button4->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button4->ForeColor = System::Drawing::Color::White;
-			this->button4->Location = System::Drawing::Point(130, 323);
+			this->button4->Location = System::Drawing::Point(130, 313);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(110, 35);
 			this->button4->TabIndex = 45;
@@ -166,7 +172,7 @@ namespace gestiondatos {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button3->ForeColor = System::Drawing::Color::White;
-			this->button3->Location = System::Drawing::Point(130, 274);
+			this->button3->Location = System::Drawing::Point(130, 266);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(110, 35);
 			this->button3->TabIndex = 44;
@@ -180,7 +186,7 @@ namespace gestiondatos {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::Color::White;
-			this->button2->Location = System::Drawing::Point(130, 224);
+			this->button2->Location = System::Drawing::Point(130, 219);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(110, 35);
 			this->button2->TabIndex = 43;
@@ -194,7 +200,7 @@ namespace gestiondatos {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(130, 177);
+			this->button1->Location = System::Drawing::Point(130, 173);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(110, 35);
 			this->button1->TabIndex = 42;
@@ -222,18 +228,50 @@ namespace gestiondatos {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(70, 112);
+			this->label1->Location = System::Drawing::Point(58, 84);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(257, 44);
+			this->label1->Size = System::Drawing::Size(264, 66);
 			this->label1->TabIndex = 48;
-			this->label1->Text = L"Seleccione el tipo de registro\r\n  que quiere ver o modificar.";
+			this->label1->Text = L" Seleccione el tipo de registro\r\nque quiere Ingresar, Actualizar\r\n              o"
+				L" Consultar.";
+			this->label1->Click += gcnew System::EventHandler(this, &consulta::label1_Click);
+			// 
+			// button6
+			// 
+			this->button6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button6.BackgroundImage")));
+			this->button6->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button6->ForeColor = System::Drawing::Color::White;
+			this->button6->Location = System::Drawing::Point(130, 453);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(110, 35);
+			this->button6->TabIndex = 49;
+			this->button6->Text = L"Ventas";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &consulta::button6_Click);
+			// 
+			// button7
+			// 
+			this->button7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button7.BackgroundImage")));
+			this->button7->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button7->ForeColor = System::Drawing::Color::White;
+			this->button7->Location = System::Drawing::Point(130, 410);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(110, 35);
+			this->button7->TabIndex = 50;
+			this->button7->Text = L"Clientes";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &consulta::button7_Click);
 			// 
 			// consulta
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
-			this->ClientSize = System::Drawing::Size(797, 506);
+			this->ClientSize = System::Drawing::Size(798, 515);
+			this->Controls->Add(this->button7);
+			this->Controls->Add(this->button6);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button5);
@@ -276,6 +314,16 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 	gestiondatos::herramientas^ comp = gcnew gestiondatos::herramientas();
 	comp->Show();
+}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	gestiondatos::ventas^ comp = gcnew gestiondatos::ventas();
+	comp->Show();
+}
+private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+	gestiondatos::cliente^ comp = gcnew gestiondatos::cliente();
+	comp->Show();
+}
+private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
