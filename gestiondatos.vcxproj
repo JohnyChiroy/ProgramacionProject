@@ -131,6 +131,7 @@
     <ClCompile Include="inicio.cpp" />
     <ClCompile Include="inventario.cpp" />
     <ClCompile Include="sesion.cpp" />
+    <ClCompile Include="validacion.cpp" />
     <ClCompile Include="ventas.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +167,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="sesion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="validacion.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="ventas.h">
@@ -205,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sesion.resx">
       <DependentUpon>sesion.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="validacion.resx">
+      <DependentUpon>validacion.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventas.resx">
       <DependentUpon>ventas.h</DependentUpon>

@@ -271,11 +271,11 @@ namespace gestiondatos {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(197, 32);
+			this->label2->Location = System::Drawing::Point(233, 49);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(521, 32);
+			this->label2->Size = System::Drawing::Size(670, 32);
 			this->label2->TabIndex = 118;
-			this->label2->Text = L"Ingresar y Consultar Datos de Clientes";
+			this->label2->Text = L"Ingresar, Actualizar o Consultar Datos de Clientes";
 			this->label2->Click += gcnew System::EventHandler(this, &cliente::label2_Click);
 			// 
 			// ListViewClientes
@@ -513,12 +513,6 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		cn->Close();
 	};
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-	ListViewItem^ listView1 = gcnew Windows::Forms::ListViewItem();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
 	this->ListViewClientes->Items->Clear();
 }
 };

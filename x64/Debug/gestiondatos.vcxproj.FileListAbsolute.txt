@@ -14,3 +14,4 @@ C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.herramientas.resources
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.hogar.resources
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.ventas.resources
 C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.cliente.resources
+C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.validacion.resources

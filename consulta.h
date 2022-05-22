@@ -6,6 +6,7 @@
 #include "herramientas.h"
 #include "ventas.h"
 #include "cliente.h"
+#include "validacion.h"
 
 namespace gestiondatos {
 
@@ -79,6 +80,7 @@ namespace gestiondatos {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Button^ button6;
 	private: System::Windows::Forms::Button^ button7;
+
 
 
 	private:
@@ -324,6 +326,10 @@ private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e
 	comp->Show();
 }
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+	gestiondatos::validacion^ comp = gcnew gestiondatos::validacion();
+	comp->Show();
 }
 };
 }

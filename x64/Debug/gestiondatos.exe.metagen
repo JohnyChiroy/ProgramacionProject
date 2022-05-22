@@ -9,6 +9,7 @@
   gestiondatos.crear.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.inicio.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.sesion.resources - Embedded, ContainedInManifestFile, 
+  gestiondatos.validacion.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.ventas.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly gestiondatos, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
@@ -44,6 +45,9 @@ Class gestiondatos.herramientas: AutoLayout, AnsiClass, Class, Public, BeforeFie
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.ventas: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class gestiondatos.validacion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.consulta: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

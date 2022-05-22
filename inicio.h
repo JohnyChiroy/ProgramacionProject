@@ -1,6 +1,8 @@
 #pragma once
 #include "crear.h"
 #include "sesion.h"
+#include "validacion.h"
+
 namespace gestiondatos {
 
 	using namespace System;
@@ -43,6 +45,7 @@ namespace gestiondatos {
 
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::Button^ button2;
 
 
 
@@ -72,6 +75,7 @@ namespace gestiondatos {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -123,7 +127,7 @@ namespace gestiondatos {
 			this->button1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.BackgroundImage")));
 			this->button1->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12));
 			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(280, 410);
+			this->button1->Location = System::Drawing::Point(285, 410);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(97, 33);
 			this->button1->TabIndex = 6;
@@ -137,11 +141,11 @@ namespace gestiondatos {
 			this->button3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.BackgroundImage")));
 			this->button3->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12));
 			this->button3->ForeColor = System::Drawing::Color::White;
-			this->button3->Location = System::Drawing::Point(414, 410);
+			this->button3->Location = System::Drawing::Point(412, 410);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(117, 33);
+			this->button3->Size = System::Drawing::Size(120, 33);
 			this->button3->TabIndex = 8;
-			this->button3->Text = L"Crear Usuario";
+			this->button3->Text = L"Ingresar Datos ";
 			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &inicio::button3_Click);
 			// 
@@ -160,12 +164,27 @@ namespace gestiondatos {
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &inicio::pictureBox2_Click);
 			// 
+			// button2
+			// 
+			this->button2->BackColor = System::Drawing::Color::Transparent;
+			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
+			this->button2->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12));
+			this->button2->ForeColor = System::Drawing::Color::White;
+			this->button2->Location = System::Drawing::Point(559, 410);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(117, 33);
+			this->button2->TabIndex = 23;
+			this->button2->Text = L"Crear Usuario";
+			this->button2->UseVisualStyleBackColor = false;
+			this->button2->Click += gcnew System::EventHandler(this, &inicio::button2_Click_1);
+			// 
 			// inicio
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(797, 506);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button1);
@@ -198,6 +217,10 @@ private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 }
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 	Close();
+}
+private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	gestiondatos::validacion^ comp = gcnew gestiondatos::validacion();
+	comp->Show();
 }
 };
 }

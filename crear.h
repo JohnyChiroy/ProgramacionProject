@@ -107,11 +107,12 @@ namespace gestiondatos {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Arial Rounded MT Bold", 21.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(244, 46);
+			this->label1->Location = System::Drawing::Point(205, 39);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(294, 33);
+			this->label1->Size = System::Drawing::Size(403, 33);
 			this->label1->TabIndex = 0;
-			this->label1->Text = L"Creación de Cuenta";
+			this->label1->Text = L"Ingreso de Datos de Cliente";
+			this->label1->Click += gcnew System::EventHandler(this, &crear::label1_Click);
 			// 
 			// label2
 			// 
@@ -401,6 +402,8 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 	Close();
+}
+private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

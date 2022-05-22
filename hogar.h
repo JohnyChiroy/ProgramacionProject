@@ -522,13 +522,6 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 	cn->Close();
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	ListViewItem^ listView1 = gcnew Windows::Forms::ListViewItem();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
-	listView1->SubItems->Clear();
 	this->listAccesorios->Items->Clear();
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
