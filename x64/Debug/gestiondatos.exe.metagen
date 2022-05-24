@@ -65,3 +65,6 @@ Class gestiondatos.sesion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class gestiondatos.inicio: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class gestiondatos.ventas01: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

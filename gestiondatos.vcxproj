@@ -133,6 +133,7 @@
     <ClCompile Include="sesion.cpp" />
     <ClCompile Include="validacion.cpp" />
     <ClCompile Include="ventas.cpp" />
+    <ClCompile Include="ventas01.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="accesorios.h">
@@ -173,6 +174,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="ventas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ventas01.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
