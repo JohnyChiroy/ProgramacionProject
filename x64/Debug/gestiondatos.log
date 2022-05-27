@@ -1,3 +1,151 @@
-﻿  ventas01.cpp
+﻿  inicio.cpp
+C:\Cod_C++\gestiondatos\electronicos.h(451,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(538,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\electronicos.h(537,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\electronicos.h(533,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\electronicos.h(532,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\hogar.h(449,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(535,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\hogar.h(534,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\hogar.h(530,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\hogar.h(529,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cocina.h(450,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(535,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cocina.h(534,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cocina.h(530,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cocina.h(529,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\accesorios.h(464,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(551,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\accesorios.h(550,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\accesorios.h(546,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\accesorios.h(545,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\herramientas.h(448,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(534,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\herramientas.h(533,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\herramientas.h(529,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\herramientas.h(528,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(851,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(848,43): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(870,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(869,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(866,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(865,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(863,44): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(941,46): warning C4101: 'cantidadven': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,117): warning C4101: 'totalven': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,103): warning C4101: 'id_fecha': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,67): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,94): warning C4101: 'dpi': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,26): warning C4101: 'cod_producto01': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,11): warning C4101: 'categoria': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(417,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cliente.h(416,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cliente.h(445,76): warning C4101: 'NIT': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(445,47): warning C4101: 'direccion': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(445,11): warning C4101: 'nombres': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(445,62): warning C4101: 'telefono': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(445,28): warning C4101: 'apellidos': variable local sin referencia
+C:\Cod_C++\gestiondatos\validacion.h(514,28): warning C4101: 'contraseña': variable local sin referencia
+C:\Cod_C++\gestiondatos\validacion.h(514,12): warning C4101: 'correo': variable local sin referencia
+  sesion.cpp
+C:\Cod_C++\gestiondatos\electronicos.h(451,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(451,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\electronicos.h(538,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\electronicos.h(537,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\electronicos.h(533,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\electronicos.h(532,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\hogar.h(449,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(449,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\hogar.h(535,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\hogar.h(534,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\hogar.h(530,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\hogar.h(529,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cocina.h(450,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(450,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\cocina.h(535,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cocina.h(534,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cocina.h(530,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cocina.h(529,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\accesorios.h(464,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(464,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\accesorios.h(551,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\accesorios.h(550,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\accesorios.h(546,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\accesorios.h(545,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\herramientas.h(448,61): warning C4101: 'modelo': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,25): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,7): warning C4101: 'cantidad': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,73): warning C4101: 'precos': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,46): warning C4101: 'marca': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(448,85): warning C4101: 'precven': variable local sin referencia
+C:\Cod_C++\gestiondatos\herramientas.h(534,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\herramientas.h(533,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\herramientas.h(529,19): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\herramientas.h(528,37): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(851,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(848,43): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(870,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(869,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(866,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(865,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(863,44): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\ventas01.h(941,46): warning C4101: 'cantidadven': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,117): warning C4101: 'totalven': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,103): warning C4101: 'id_fecha': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,67): warning C4101: 'descripcion': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,94): warning C4101: 'dpi': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,26): warning C4101: 'cod_producto01': variable local sin referencia
+C:\Cod_C++\gestiondatos\ventas01.h(941,11): warning C4101: 'categoria': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(417,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cliente.h(416,20): warning C4244: 'argumento': conversión de '__int64' a 'int'; posible pérdida de datos
+C:\Cod_C++\gestiondatos\cliente.h(445,76): warning C4101: 'NIT': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(445,47): warning C4101: 'direccion': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(445,11): warning C4101: 'nombres': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(445,62): warning C4101: 'telefono': variable local sin referencia
+C:\Cod_C++\gestiondatos\cliente.h(445,28): warning C4101: 'apellidos': variable local sin referencia
+C:\Cod_C++\gestiondatos\validacion.h(514,28): warning C4101: 'contraseña': variable local sin referencia
+C:\Cod_C++\gestiondatos\validacion.h(514,12): warning C4101: 'correo': variable local sin referencia
+  Generando código...
   accesorios.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
   gestiondatos.vcxproj -> C:\Cod_C++\gestiondatos\x64\Debug\gestiondatos.exe

@@ -4,7 +4,7 @@
 #include "cocina.h"
 #include "accesorios.h"
 #include "herramientas.h"
-#include "ventas.h"
+#include "ventas01.h"
 #include "cliente.h"
 #include "validacion.h"
 
@@ -130,7 +130,7 @@ namespace gestiondatos {
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
 			this->pictureBox1->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.ErrorImage")));
-			this->pictureBox1->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\salir.png";
+			this->pictureBox1->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\salir4.png";
 			this->pictureBox1->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.InitialImage")));
 			this->pictureBox1->Location = System::Drawing::Point(744, 4);
 			this->pictureBox1->Name = L"pictureBox1";
@@ -318,7 +318,7 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 	comp->Show();
 }
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
-	gestiondatos::ventas^ comp = gcnew gestiondatos::ventas();
+	gestiondatos::ventas01^ comp = gcnew gestiondatos::ventas01();
 	comp->Show();
 }
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {

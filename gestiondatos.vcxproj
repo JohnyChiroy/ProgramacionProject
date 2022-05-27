@@ -129,11 +129,13 @@
     <ClCompile Include="herramientas.cpp" />
     <ClCompile Include="hogar.cpp" />
     <ClCompile Include="inicio.cpp" />
-    <ClCompile Include="inventario.cpp" />
     <ClCompile Include="sesion.cpp" />
     <ClCompile Include="validacion.cpp" />
-    <ClCompile Include="ventas.cpp" />
     <ClCompile Include="ventas01.cpp" />
+    <ClCompile Include="ventas02.cpp" />
+    <ClCompile Include="ventas03.cpp" />
+    <ClCompile Include="ventas04.cpp" />
+    <ClCompile Include="ventas05.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="accesorios.h">
@@ -157,9 +159,6 @@
     <ClInclude Include="hogar.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="inventario.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="conexion.h" />
     <ClInclude Include="crear.h">
       <FileType>CppForm</FileType>
@@ -173,10 +172,19 @@
     <ClInclude Include="validacion.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="ventas.h">
+    <ClInclude Include="ventas01.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="ventas01.h">
+    <ClInclude Include="ventas02.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ventas03.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ventas04.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ventas05.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -202,9 +210,6 @@
     <EmbeddedResource Include="hogar.resx">
       <DependentUpon>hogar.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="inventario.resx">
-      <DependentUpon>inventario.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="crear.resx">
       <DependentUpon>crear.h</DependentUpon>
     </EmbeddedResource>
@@ -217,8 +222,20 @@
     <EmbeddedResource Include="validacion.resx">
       <DependentUpon>validacion.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventas.resx">
-      <DependentUpon>ventas.h</DependentUpon>
+    <EmbeddedResource Include="ventas01.resx">
+      <DependentUpon>ventas01.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas02.resx">
+      <DependentUpon>ventas02.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas03.resx">
+      <DependentUpon>ventas03.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas04.resx">
+      <DependentUpon>ventas04.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas05.resx">
+      <DependentUpon>ventas05.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

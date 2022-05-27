@@ -25,7 +25,6 @@ protected:
         cn = gcnew SqlConnection(Convert::ToString(st));
     }
 
-
 public:
     void Insertar(int long long dpi, String^ nombre, String^ correo, String^ contraseña) {
         Conectar();
@@ -143,6 +142,8 @@ public:
         ejecutar->ExecuteNonQuery();
         cn->Close();
     }
+
+    //Insertar Clientes
     void Insertarcliente(int long long dpi, String^ nombres, String^ apellidos, String^ direccion, int telefono, int NIT) {
         Conectar();
         String^ sentencia = "Insert into CLIENTE values(@dpi, @nombres, @apellidos, @direccion, @telefono, @NIT)";
@@ -157,20 +158,144 @@ public:
         ejecutar->ExecuteNonQuery();
         cn->Close();
     }
-    void Insertarventas(int id_venta, String^ categoria, int cod_producto01, int cod_producto02, int cod_producto03, int cod_producto04, int cod_producto05, int cantidadven, String^ descripcion, int long long dpi, int totalven) {
+    //Insertar Fecha de Ventas
+    void Insertarfecha01(int id_fecha, String^ dia, String^ mes, int año) {
         Conectar();
-        String^ sentencia = "Insert into VENTAS values(@id_venta, @categoria, @cod_producto01, @cod_producto02, @cod_producto03, @cod_producto04, @cod_producto05, @cantidadven, @descripcion, @dpi, @totalven)";
+        String^ sentencia = "Insert into FECHA01 values(@id_fecha, @dia, @mes, @año)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@dia", dia);
+        ejecutar->Parameters->AddWithValue("@mes", mes);
+        ejecutar->Parameters->AddWithValue("@año", año);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarfecha02(int id_fecha, String^ dia, String^ mes, int año) {
+        Conectar();
+        String^ sentencia = "Insert into FECHA02 values(@id_fecha, @dia, @mes, @año)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@dia", dia);
+        ejecutar->Parameters->AddWithValue("@mes", mes);
+        ejecutar->Parameters->AddWithValue("@año", año);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarfecha03(int id_fecha, String^ dia, String^ mes, int año) {
+        Conectar();
+        String^ sentencia = "Insert into FECHA03 values(@id_fecha, @dia, @mes, @año)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@dia", dia);
+        ejecutar->Parameters->AddWithValue("@mes", mes);
+        ejecutar->Parameters->AddWithValue("@año", año);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarfecha04(int id_fecha, String^ dia, String^ mes, int año) {
+        Conectar();
+        String^ sentencia = "Insert into FECHA04 values(@id_fecha, @dia, @mes, @año)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@dia", dia);
+        ejecutar->Parameters->AddWithValue("@mes", mes);
+        ejecutar->Parameters->AddWithValue("@año", año);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarfecha05(int id_fecha, String^ dia, String^ mes, int año) {
+        Conectar();
+        String^ sentencia = "Insert into FECHA05 values(@id_fecha, @dia, @mes, @año)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@dia", dia);
+        ejecutar->Parameters->AddWithValue("@mes", mes);
+        ejecutar->Parameters->AddWithValue("@año", año);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+
+    //Insertar Ventas 
+    void Insertarventas01(int id_venta, String^ categoria, int cod_producto01, int cantidadven, String^ descripcion, int long long dpi, int id_fecha, int totalven) {
+        Conectar();
+        String^ sentencia = "Insert into VENTAS01 values(@id_venta, @categoria, @cod_producto01, @cantidadven, @descripcion, @dpi, @id_fecha, @totalven)";
         SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
         ejecutar->Parameters->AddWithValue("@id_venta", id_venta);
         ejecutar->Parameters->AddWithValue("@categoria", categoria);
         ejecutar->Parameters->AddWithValue("@cod_producto01", cod_producto01);
+        ejecutar->Parameters->AddWithValue("@cantidadven", cantidadven);
+        ejecutar->Parameters->AddWithValue("@descripcion", descripcion);
+        ejecutar->Parameters->AddWithValue("@dpi", dpi);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@totalven", totalven);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarventas02(int id_venta, String^ categoria, int cod_producto02, int cantidadven, String^ descripcion, int long long dpi, int id_fecha, int totalven) {
+        Conectar();
+        String^ sentencia = "Insert into VENTAS02 values(@id_venta, @categoria, @cod_producto02 @cantidadven, @descripcion, @dpi, @id_fecha, @totalven)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_venta", id_venta);
+        ejecutar->Parameters->AddWithValue("@categoria", categoria);
         ejecutar->Parameters->AddWithValue("@cod_producto02", cod_producto02);
+        ejecutar->Parameters->AddWithValue("@cantidadven", cantidadven);
+        ejecutar->Parameters->AddWithValue("@descripcion", descripcion);
+        ejecutar->Parameters->AddWithValue("@dpi", dpi);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@totalven", totalven);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarventas03(int id_venta, String^ categoria, int cod_producto03, int cantidadven, String^ descripcion, int long long dpi, int id_fecha, int totalven) {
+        Conectar();
+        String^ sentencia = "Insert into VENTAS03 values(@id_venta, @categoria, @cod_producto03, @cantidadven, @descripcion, @dpi, @id_fecha, @totalven)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_venta", id_venta);
+        ejecutar->Parameters->AddWithValue("@categoria", categoria);
         ejecutar->Parameters->AddWithValue("@cod_producto03", cod_producto03);
+        ejecutar->Parameters->AddWithValue("@cantidadven", cantidadven);
+        ejecutar->Parameters->AddWithValue("@descripcion", descripcion);
+        ejecutar->Parameters->AddWithValue("@dpi", dpi);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@totalven", totalven);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarventas04(int id_venta, String^ categoria, int cod_producto04, int cantidadven, String^ descripcion, int long long dpi, int id_fecha, int totalven) {
+        Conectar();
+        String^ sentencia = "Insert into VENTAS04 values(@id_venta, @categoria, @cod_producto04, @cantidadven, @descripcion, @dpi, @id_fecha, @totalven)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_venta", id_venta);
+        ejecutar->Parameters->AddWithValue("@categoria", categoria);
         ejecutar->Parameters->AddWithValue("@cod_producto04", cod_producto04);
+        ejecutar->Parameters->AddWithValue("@cantidadven", cantidadven);
+        ejecutar->Parameters->AddWithValue("@descripcion", descripcion);
+        ejecutar->Parameters->AddWithValue("@dpi", dpi);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
+        ejecutar->Parameters->AddWithValue("@totalven", totalven);
+        cn->Open();
+        ejecutar->ExecuteNonQuery();
+        cn->Close();
+    }
+    void Insertarventas05(int id_venta, String^ categoria, int cod_producto05, int cantidadven, String^ descripcion, int long long dpi, int id_fecha, int totalven) {
+        Conectar();
+        String^ sentencia = "Insert into VENTAS05 values(@id_venta, @categoria, @cod_producto05, @cantidadven, @descripcion, @dpi, @id_fecha, @totalven)";
+        SqlCommand^ ejecutar = gcnew SqlCommand(sentencia, cn);
+        ejecutar->Parameters->AddWithValue("@id_venta", id_venta);
+        ejecutar->Parameters->AddWithValue("@categoria", categoria);
         ejecutar->Parameters->AddWithValue("@cod_producto05", cod_producto05);
         ejecutar->Parameters->AddWithValue("@cantidadven", cantidadven);
         ejecutar->Parameters->AddWithValue("@descripcion", descripcion);
         ejecutar->Parameters->AddWithValue("@dpi", dpi);
+        ejecutar->Parameters->AddWithValue("@id_fecha", id_fecha);
         ejecutar->Parameters->AddWithValue("@totalven", totalven);
         cn->Open();
         ejecutar->ExecuteNonQuery();

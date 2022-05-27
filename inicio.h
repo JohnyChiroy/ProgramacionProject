@@ -45,7 +45,8 @@ namespace gestiondatos {
 
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
-	private: System::Windows::Forms::Button^ button2;
+
+
 
 
 
@@ -75,7 +76,6 @@ namespace gestiondatos {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -97,20 +97,21 @@ namespace gestiondatos {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label3->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::White;
-			this->label3->Location = System::Drawing::Point(28, 207);
+			this->label3->Location = System::Drawing::Point(29, 207);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(300, 46);
+			this->label3->Size = System::Drawing::Size(281, 36);
 			this->label3->TabIndex = 4;
-			this->label3->Text = L"Mantén el orden, Administra tus productos\r\n      de una manera mas facil y eficie"
-				L"nte.\r\n";
+			this->label3->Text = L"Mantén el orden y control de tu Negocio\r\nde una manera profesional y eficiente.\r\n"
+				L"";
 			this->label3->Click += gcnew System::EventHandler(this, &inicio::label3_Click);
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->pictureBox1->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.ErrorImage")));
 			this->pictureBox1->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\fondos\\pc.png";
 			this->pictureBox1->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.InitialImage")));
@@ -125,11 +126,13 @@ namespace gestiondatos {
 			// 
 			this->button1->BackColor = System::Drawing::Color::Transparent;
 			this->button1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.BackgroundImage")));
+			this->button1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->button1->FlatAppearance->BorderSize = 0;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12));
 			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(285, 410);
+			this->button1->Location = System::Drawing::Point(151, 402);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(97, 33);
+			this->button1->Size = System::Drawing::Size(210, 40);
 			this->button1->TabIndex = 6;
 			this->button1->Text = L"Ingresar";
 			this->button1->UseVisualStyleBackColor = false;
@@ -139,11 +142,13 @@ namespace gestiondatos {
 			// 
 			this->button3->BackColor = System::Drawing::Color::Transparent;
 			this->button3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.BackgroundImage")));
+			this->button3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->button3->FlatAppearance->BorderSize = 0;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12));
 			this->button3->ForeColor = System::Drawing::Color::White;
-			this->button3->Location = System::Drawing::Point(412, 410);
+			this->button3->Location = System::Drawing::Point(398, 402);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(120, 33);
+			this->button3->Size = System::Drawing::Size(210, 40);
 			this->button3->TabIndex = 8;
 			this->button3->Text = L"Ingresar Datos ";
 			this->button3->UseVisualStyleBackColor = false;
@@ -154,7 +159,7 @@ namespace gestiondatos {
 			this->pictureBox2->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.BackgroundImage")));
 			this->pictureBox2->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.ErrorImage")));
-			this->pictureBox2->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\salir.png";
+			this->pictureBox2->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\salir4.png";
 			this->pictureBox2->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.InitialImage")));
 			this->pictureBox2->Location = System::Drawing::Point(746, 2);
 			this->pictureBox2->Name = L"pictureBox2";
@@ -164,27 +169,12 @@ namespace gestiondatos {
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &inicio::pictureBox2_Click);
 			// 
-			// button2
-			// 
-			this->button2->BackColor = System::Drawing::Color::Transparent;
-			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 12));
-			this->button2->ForeColor = System::Drawing::Color::White;
-			this->button2->Location = System::Drawing::Point(559, 410);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(117, 33);
-			this->button2->TabIndex = 23;
-			this->button2->Text = L"Crear Usuario";
-			this->button2->UseVisualStyleBackColor = false;
-			this->button2->Click += gcnew System::EventHandler(this, &inicio::button2_Click_1);
-			// 
 			// inicio
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(797, 506);
-			this->Controls->Add(this->button2);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button1);
@@ -217,10 +207,6 @@ private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 }
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 	Close();
-}
-private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^ e) {
-	gestiondatos::validacion^ comp = gcnew gestiondatos::validacion();
-	comp->Show();
 }
 };
 }

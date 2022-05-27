@@ -198,7 +198,7 @@ namespace gestiondatos {
 			this->pictureBox2->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.BackgroundImage")));
 			this->pictureBox2->ErrorImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.ErrorImage")));
-			this->pictureBox2->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\salir.png";
+			this->pictureBox2->ImageLocation = L"C:\\Cod_C++\\gestiondatos\\imagenes\\general\\salir4.png";
 			this->pictureBox2->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.InitialImage")));
 			this->pictureBox2->Location = System::Drawing::Point(749, 2);
 			this->pictureBox2->Name = L"pictureBox2";
@@ -301,6 +301,7 @@ namespace gestiondatos {
 					this->columnHeader2, this->columnHeader3, this->columnHeader4, this->columnHeader5, this->columnHeader6, this->columnHeader7,
 					this->columnHeader11
 			});
+			this->ListViewDatos->ForeColor = System::Drawing::Color::White;
 			this->ListViewDatos->HideSelection = false;
 			this->ListViewDatos->Location = System::Drawing::Point(28, 52);
 			this->ListViewDatos->Name = L"ListViewDatos";
@@ -363,6 +364,7 @@ namespace gestiondatos {
 				this->columnHeader8,
 					this->columnHeader9, this->columnHeader10
 			});
+			this->ListViewUsuarios->ForeColor = System::Drawing::Color::White;
 			this->ListViewUsuarios->HideSelection = false;
 			this->ListViewUsuarios->Location = System::Drawing::Point(362, 315);
 			this->ListViewUsuarios->Name = L"ListViewUsuarios";

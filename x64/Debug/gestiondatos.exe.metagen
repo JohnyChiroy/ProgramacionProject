@@ -5,12 +5,15 @@
   gestiondatos.electronicos.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.herramientas.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.hogar.resources - Embedded, ContainedInManifestFile, 
-  gestiondatos.inventario.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.crear.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.inicio.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.sesion.resources - Embedded, ContainedInManifestFile, 
   gestiondatos.validacion.resources - Embedded, ContainedInManifestFile, 
-  gestiondatos.ventas.resources - Embedded, ContainedInManifestFile, 
+  gestiondatos.ventas01.resources - Embedded, ContainedInManifestFile, 
+  gestiondatos.ventas02.resources - Embedded, ContainedInManifestFile, 
+  gestiondatos.ventas03.resources - Embedded, ContainedInManifestFile, 
+  gestiondatos.ventas04.resources - Embedded, ContainedInManifestFile, 
+  gestiondatos.ventas05.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly gestiondatos, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey
@@ -44,7 +47,7 @@ Class gestiondatos.hogar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class gestiondatos.herramientas: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class gestiondatos.ventas: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class gestiondatos.ventas01: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.validacion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
@@ -56,15 +59,21 @@ Class gestiondatos.consulta: AutoLayout, AnsiClass, Class, Public, BeforeFieldIn
 Class gestiondatos.crear: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class gestiondatos.inventario: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.sesion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class gestiondatos.inicio: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class gestiondatos.ventas01: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class gestiondatos.ventas02: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class gestiondatos.ventas03: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class gestiondatos.ventas04: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class gestiondatos.ventas05: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
